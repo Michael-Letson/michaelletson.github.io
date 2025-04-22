@@ -310,10 +310,12 @@ nav ul li a:hover::after{
     margin-top: 20px;
     cursor: pointer;
 }
-span#msg{
-    color: #fff;
-    margin-top: -10px;
-    display: block;
+.response-message {
+    margin-top: 15px;
+    font-size: 16px;
+    color: green;
+    text-align: center;
+    display: none; /* Hidden by default */
 }
 
 .copyright{
