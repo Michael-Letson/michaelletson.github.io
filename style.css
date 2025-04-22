@@ -310,6 +310,12 @@ nav ul li a:hover::after{
     margin-top: 20px;
     cursor: pointer;
 }
+#msg{
+    color: #61b752;
+    margin-top: -10x;
+    display: block;
+}
+
 .copyright{
     width: 100%;
     text-align: center;
@@ -320,12 +326,6 @@ nav ul li a:hover::after{
 }
 .copyright i{
     color: #ff004f;
-}
-
-#msg{
-    color: #61b752;
-    margin-top: -10x;
-    display: block;
 }
 
 /* -----------CSS for small screens----------- */
