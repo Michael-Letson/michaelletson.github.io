@@ -170,7 +170,7 @@
 const form = document.forms['submit-to-google-sheet']
 
 form.addEventListener('submit', e => {
-e.preventDefault();
+e.preventDefault()
 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 
 const responseMessage = document.getElementById('responseMessage'); responseMessage.textContent = 'Your message has been successfully sent!'; responseMessage.style.display = 'block';
