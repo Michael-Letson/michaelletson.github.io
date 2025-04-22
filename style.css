@@ -310,7 +310,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
     cursor: pointer;
 }
-#msg{
+#span{
     color: #61b752;
     margin-top: -10x;
     display: block;
