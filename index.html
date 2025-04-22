@@ -170,7 +170,6 @@
                             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                                 .then(response => {msg.innerHTML = "Message sent successfully"})
                                 .catch(error => console.error('Error!', error.message))
-                                .catch(response => {msg.innerHTML = "Message failed to send"})
                                 setTimeout(function(){
                                     msg.innerHTML = ""
                                     },5000)
