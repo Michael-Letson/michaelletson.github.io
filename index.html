@@ -130,6 +130,7 @@
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2" onclick="myFunction()" value="Reset form">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
@@ -168,10 +169,10 @@
                     form.addEventListener('submit', e => {
                         e.preventDefault()
                             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                                .then(response => {
-                                    msg.innerHTML = "Message sent successfully"
-                                })
+                                .then(response => console.log('Success!', response))
+                                .then(response => {msg.innerHTML = "Message sent successfully"})
                                 .catch(error => console.error('Error!', error.message))
+                                .then(response => {msg.innerHTML = "Message failed to send"})
                                 setTimeout(function(){
                                     msg.innerHTML = ""
                                     },5000)
