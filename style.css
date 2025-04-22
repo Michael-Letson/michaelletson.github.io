@@ -321,6 +321,12 @@ nav ul li a:hover::after{
 .copyright i{
     color: #ff004f;
 }
+
+#span{
+    color: #61b752;
+    margin-top: -10x;
+    display: block;
+}
 /* -----------CSS for small screens----------- */
 nav .fa-solid{
     display: none;
