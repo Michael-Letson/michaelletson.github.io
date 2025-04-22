@@ -322,11 +322,12 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
-#span{
+#msg{
     color: #61b752;
     margin-top: -10x;
     display: block;
 }
+
 /* -----------CSS for small screens----------- */
 nav .fa-solid{
     display: none;
