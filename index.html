@@ -169,7 +169,7 @@
                         e.preventDefault()
                             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                                 .then(response => console.log('Success!', response))
-                                msg.innerHTML = <span>"Message sent successfully"</span>
+                                msg.innerHTML = "Message sent successfully"
                                 .catch(error => console.error('Error!', error.message))
                                 msg.innerHTML = "Message failed to send"
                                 setTimeout(function(){
