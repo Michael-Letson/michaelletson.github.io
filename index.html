@@ -164,18 +164,17 @@
                 sidemenu.style.right = "-200px";
             }
   </script> 
-  <script>
-
-
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbywG_54iwswC6nu8-lsWRM7J86dfly0TLArwt-AiR0cBxk6ofXJMxGfJDe0teze02Wr3A/exec'
-                const form = document.forms['submit-to-google-sheet']
-                    form.addEventListener('submit', e => {
-                        e.preventDefault()
-                            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                                .then(response => console.log('Success!', response))
-                                .catch(error => console.error('Error!', error.message))
-                                document.getElementById("myForm").reset();
-                    })
+ <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbywG_54iwswC6nu8-lsWRM7J86dfly0TLArwt-AiR0cBxk6ofXJMxGfJDe0teze02Wr3A/exec'
+    const form = document.forms['submit-to-google-sheets']
+    const msg = document.getElementById("msg")
+    
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => console.log('Success!', response))
+    .catch(error => console.error('Error!', error.message))
+    })
   </script>
 </body>
 </html>
